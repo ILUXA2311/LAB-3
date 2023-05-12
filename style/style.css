@@ -1,0 +1,446 @@
+@charset "UTF-8";
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Source+Serif+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
+a.booknowhere {
+  text-decoration: none;
+  color: white;
+}
+
+a.typewindow {
+  margin: 0;
+  height: auto;
+  width: auto;
+}
+
+.typewindows {
+  height: 50px;
+  width: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: rgba(211, 149, 104, 0.5);
+  width: 100%;
+}
+
+header input, header label {
+  display: none;
+}
+
+header nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+header nav > img {
+  position: absolute;
+  width: 50px;
+}
+
+header nav > img:nth-child(3) {
+  left: 20%;
+  top: 50px;
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+header nav > img:nth-child(4) {
+  left: 55%;
+  top: 40px;
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+header nav > img:nth-child(5) {
+  left: 78%;
+  top: 50px;
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+header nav > img:nth-child(6) {
+  right: 2%;
+  width: 100px;
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+header nav ul {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+header nav ul li {
+  color: #00bfff;
+  /* Цвет обычной ссылки */
+  line-height: 1;
+  text-decoration: none;
+  /* Убираем подчеркивание */
+  cursor: pointer;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #000000;
+}
+
+header nav ul li a img {
+  width: 90px;
+  padding-right: 200px;
+}
+
+header nav ul li a.menu__item:hover {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #000000;
+  border-bottom: 2px solid black;
+}
+
+header nav ul li a.menu__item:hover img {
+  width: 90px;
+  padding-right: 200px;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(211, 149, 104, 0.5);
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: auto;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+footer div p {
+  width: 100%;
+}
+
+footer div h1 {
+  width: 100%;
+  font-family: "Source Serif Pro", serif;
+}
+
+footer div ul {
+  list-style: none;
+  width: 100%;
+  text-align: left;
+}
+
+footer div ul li a {
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer div ul ~ img {
+  height: 50px;
+}
+
+footer div:last-child {
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+}
+
+footer div:last-child img {
+  margin-right: 10px;
+}
+
+body {
+  background-color: #FAEBD7;
+}
+
+main.index {
+  padding-bottom: 30px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-grid-columns: 33.3% 33.3% 33.3%;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+main.index .bg {
+  font-family: "Roboto Condensed", sans-serif;
+  -ms-grid-column-span: 3;
+  grid-column: 3 span;
+  width: 100%;
+  margin-bottom: 40px;
+  height: 450px;
+  background-image: url(../image/bg1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+main.index .bg h1, main.index .bg h3 {
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  -webkit-text-stroke: 2px #000000;
+}
+
+main.index .bg h3 {
+  font-size: 2em;
+}
+
+main.index .bg h1 {
+  margin-top: 13%;
+}
+
+main.index .bog {
+  -ms-grid-column-span: 3;
+  grid-column: 3 span;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+main.index .bog div {
+  background-color: rgba(211, 149, 104, 0.5);
+  border-radius: 150px;
+  width: 60%;
+  padding: 60px 100px 60px 60px;
+}
+
+main.index .bog div h1 {
+  font-weight: bold;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 20px;
+}
+
+main.index .bog div p {
+  width: 80%;
+  font-size: 1.5em;
+  font-family: "Source Serif Pro", serif;
+  font-style: italic;
+  font-weight: 580;
+}
+
+main.index .bog img {
+  position: absolute;
+  width: 40%;
+  height: 350px;
+  right: 4%;
+  padding: 5.5% 0;
+  border-radius: 190px;
+}
+
+main.index h1.all {
+  text-align: center;
+  font-size: 2em;
+  font-family: "Roboto Condensed", sans-serif;
+  -ms-grid-column-span: 3;
+  grid-column: 3 span;
+  font-weight: bold;
+}
+
+main.index .unit {
+  margin: 0 auto;
+  font-family: "Source Serif Pro", serif;
+  width: 250px;
+}
+
+main.index .unit h3 {
+  width: 100%;
+  border-bottom: 1px solid #000000;
+}
+
+main.index .unit img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+main.index .unit img:hover {
+  border-radius: 0;
+}
+
+main.index .unit p {
+  padding: 5px 0;
+}
+
+main.index .unit button {
+  cursor: pointer;
+  background-color: #000000;
+  color: white;
+  padding: 5px;
+  border: 2px solid #000000;
+  width: 50%;
+}
+
+main.index .unit button:hover {
+  background-color: #474747;
+  border-radius: 25px;
+}
+
+main.units {
+  font-family: "Tenor Sans", sans-serif;
+  padding: 30px 0;
+  width: 90%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 2%;
+  -ms-grid-columns: 23.5% 2% 23.5% 2% 23.5% 2% 23.5%;
+  grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+}
+
+main.units .unit {
+  text-align: center;
+  margin: 15px auto;
+  width: 100%;
+}
+
+main.units .unit img {
+  width: 100%;
+}
+
+main.news {
+  padding: 30px 0;
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 4%;
+  width: 80%;
+  margin: 0 auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+  -ms-grid-columns: 48% 4% 48%;
+  grid-template-columns: 48% 48%;
+}
+
+main.news p {
+  font-size: 1.8em;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+main.news img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+main.news .all {
+  margin-bottom: 20px;
+  text-align: center;
+  -ms-grid-column-span: 2;
+  grid-column: 2 span;
+  font-size: 2em;
+}
+
+main.about {
+  font-family: "Source Serif Pro", serif;
+  display: -ms-grid;
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  grid-column-gap: 20px;
+  font-weight: 600;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+main.about .all, main.about img, main.about p, main.about .tst {
+  margin-bottom: 20px;
+}
+
+main.about .all {
+  text-align: left;
+  -ms-grid-column-span: 3;
+  grid-column: 3 span;
+}
+
+main.about h1.all {
+  font-size: 3em;
+}
+
+main.about img {
+  width: 100%;
+  -ms-grid-column-span: 2;
+  grid-column: 2 span;
+}
+
+main.about p {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+main.about p span {
+  color: red;
+}
+
+main.about .tst {
+  margin: 0 auto;
+  width: 200px;
+  text-align: center;
+}
+
+main.about .tst h1 {
+  font-size: 2em;
+}
+
+img.img-about {
+  width: 1000px;
+  height: 1000px;
+}
+
+/* * { border: 1px solid red; } */
+/*# sourceMappingURL=style.css.map */
